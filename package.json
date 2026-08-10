@@ -1,0 +1,18 @@
+{
+  "name": "footowlsolution-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Headless Media SDK & Component Library Ecosystem",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspace=apps/web",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
